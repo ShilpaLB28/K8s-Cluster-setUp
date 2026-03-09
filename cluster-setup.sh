@@ -54,6 +54,11 @@ sudo apt install -y conntrack
 
 if [ "$1" == "master" ]; then
 sudo kubeadm init
+
+echo "---------------------------"
+echo "save the above kubeadm join token"
+echo "---------------------------"
+
 #When complete, you’ll see a kubeadm join ... command — copy that for joining workers.
 
 mkdir -p $HOME/.kube
