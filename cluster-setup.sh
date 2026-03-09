@@ -52,7 +52,7 @@ sudo systemctl enable --now kubelet
 sudo apt update
 sudo apt install -y conntrack
 
-if ["$1" == 'master']; then
+if [ "$1" == 'master' ]; then
 sudo kubeadm init
 #When complete, you’ll see a kubeadm join ... command — copy that for joining workers.
 
@@ -80,7 +80,7 @@ kubectl get pods -A
 
 fi
 
-if ["$1" == 'worker']; then
+if [ "$1" == 'worker' ]; then
 
 #On each worker node, run the command shown at the end of kubeadm init, e.g.:
 #below command should be picked from ur kubeadm init command output
