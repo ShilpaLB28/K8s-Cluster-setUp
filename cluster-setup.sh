@@ -69,7 +69,7 @@ kubectl get nodes
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/calico.yaml
 
 
-Wait a few minutes, then:
+#Wait a few minutes, then:
 
 kubectl get nodes
 #All should become Ready.
