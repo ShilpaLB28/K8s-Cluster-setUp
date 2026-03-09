@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt update 
+sudo apt update -y
 
 sudo apt install -y apt-transport-https ca-certificates curl gpg
 
