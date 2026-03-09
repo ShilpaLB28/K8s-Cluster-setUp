@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y && sudo reboot
+
 sudo apt install -y apt-transport-https ca-certificates curl gpg
 
 #Disable swap
