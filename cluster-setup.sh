@@ -1,6 +1,5 @@
 #!/bin/bash
-sudo DIABIAN_FRONTED=noninteractive apt update -y 
-sudo DIABIAN_FRONTED=noninteractive apt upgrade -y 
+sudo apt update 
 
 sudo apt install -y apt-transport-https ca-certificates curl gpg
 
