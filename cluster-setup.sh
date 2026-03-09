@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt update && sudo apt upgrade -y && sudo reboot
+sudo DIABIAN_FRONTED=noninteractive apt update -y 
+sudo DIABIAN_FRONTED=noninteractive apt upgrade -y 
 
 sudo apt install -y apt-transport-https ca-certificates curl gpg
 
