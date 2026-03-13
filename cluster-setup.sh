@@ -84,12 +84,15 @@ kubectl get nodes
 kubectl get pods -A
 #all pods should be running
 
-fi
-
-if [ "$1" == "worker" ]; then
+elif [ "$1" == "worker" ]; then
 
 #On each worker node, run the command shown at the end of kubeadm init, e.g.:
 #below command should be picked from ur kubeadm init command output
 
 echo " Run the kubeadm join <<token>> command which you get from master node. "
+
+else 
+unkown_option $1
+exit 1
+
 fi
